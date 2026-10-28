@@ -413,10 +413,12 @@
                 Permissionless launchpad that turns a token idea into a functioning on-chain market. A creator deploys
                 a token that trades immediately against an automated bonding curve, buyers organically build its native
                 ETH reserve, and once it reaches a creator-configured target the liquidity graduates into a conventional
-                AMM pool.
+                AMM pool. Launches can be tied to a Polymarket prediction market, so a coin carries the real-world
+                question it trades around.
               </p>
               <ul class="project-highlights">
                 <li>Bonding-curve pricing against a native ETH reserve, so a launch needs no seeded liquidity - roughly a 1.2% trade fee and a 0.0015 ETH launch fee</li>
+                <li>Polymarket integration lets a creator attach a live prediction market to a launch, giving the coin context and framing - the link is metadata and display, and does not alter the token's financial mechanics</li>
                 <li>Creator-configurable graduation target with automatic AMM liquidity migration and a locked LP position</li>
                 <li>Low-custody architecture: read-only backend, multisig Safe administration, and the original deployer key destroyed after deployment</li>
                 <li>Event indexer and metadata pipeline that reconciles curve state, reserves, fees, and token imagery against chain state</li>
