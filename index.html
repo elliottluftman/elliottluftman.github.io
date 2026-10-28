@@ -357,6 +357,89 @@
 
         <div class="projects-grid">
 
+          <!-- Givora -->
+          <div class="project-card project-card--featured project-card--full" data-category="web3" aria-label="Givora - Crypto-Native Gift Card Marketplace">
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag tag-web3">Payments Infrastructure</span>
+                <span class="tag tag-live">Live</span>
+              </div>
+              <div class="project-title-group">
+                <h3 class="project-title">Givora</h3>
+                <p class="project-subtitle">Crypto-Native Gift Card Marketplace</p>
+              </div>
+              <p class="project-desc">
+                Marketplace that turns a crypto deposit into real-world purchasing power. Every order gets its own
+                blockchain wallet, the backend detects and verifies the payment directly on Ethereum or Solana, then
+                purchases and securely delivers the gift card through CryptoRefills. The hard part is making something
+                irreversible and asynchronous feel like a normal checkout.
+              </p>
+              <ul class="project-highlights">
+                <li>One order = one unique wallet, derived deterministically with concurrency-safe indexing and no plaintext keys at rest</li>
+                <li>Direct on-chain payment detection with per-chain finality policy, including 12 confirmations before an ETH order advances</li>
+                <li>Exactly-once financial execution: durable order state machine, crash recovery mid-transaction, reconciliation, and duplicate-payment prevention</li>
+                <li>Automated refunds to the verified funding address, with dust handling when a refund would cost more in fees than it returns</li>
+                <li>420/420 automated tests passing twice consecutively across an ETH/SOL failure matrix with a clean typecheck</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">Postgres</span>
+                <span class="tech-pill">Ethereum</span>
+                <span class="tech-pill">Solana</span>
+                <span class="tech-pill">Alchemy</span>
+              </div>
+              <div class="project-cta-row">
+                <a href="https://givoracard.com" target="_blank" rel="noopener noreferrer" class="btn-proj btn-proj-demo">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Site
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Likelihood -->
+          <div class="project-card project-card--featured project-card--full" data-category="web3" aria-label="Likelihood - Token Launchpad on Robinhood Chain">
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag tag-web3">Smart Contracts</span>
+                <span class="tag tag-live">Live</span>
+              </div>
+              <div class="project-title-group">
+                <h3 class="project-title">Likelihood</h3>
+                <p class="project-subtitle">Token Launchpad on Robinhood Chain</p>
+              </div>
+              <p class="project-desc">
+                Permissionless launchpad that turns a token idea into a functioning on-chain market. A creator deploys
+                a token that trades immediately against an automated bonding curve, buyers organically build its native
+                ETH reserve, and once it reaches a creator-configured target the liquidity graduates into a conventional
+                AMM pool.
+              </p>
+              <ul class="project-highlights">
+                <li>Bonding-curve pricing against a native ETH reserve, so a launch needs no seeded liquidity - roughly a 1.2% trade fee and a 0.0015 ETH launch fee</li>
+                <li>Creator-configurable graduation target with automatic AMM liquidity migration and a locked LP position</li>
+                <li>Low-custody architecture: read-only backend, multisig Safe administration, and the original deployer key destroyed after deployment</li>
+                <li>Event indexer and metadata pipeline that reconciles curve state, reserves, fees, and token imagery against chain state</li>
+                <li>Validated in production across two live token launches and nine real on-chain trades, with reserve and treasury accounting reconciled</li>
+                <li>Deliberately simplified from an earlier prediction-market-backed design once testing showed the economics of combining hard asset backing with speculative curve appreciation did not hold</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-pill">Solidity</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">Robinhood Chain</span>
+                <span class="tech-pill">Safe</span>
+                <span class="tech-pill">Alchemy</span>
+              </div>
+              <div class="project-cta-row">
+                <a href="https://likelihoodpad.com" target="_blank" rel="noopener noreferrer" class="btn-proj btn-proj-demo">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Site
+                </a>
+              </div>
+            </div>
+          </div>
+
           <!-- NetSentinel -->
           <div class="project-card project-card--featured" data-category="cyber" aria-label="NetSentinel – Real-Time Network Traffic Analyzer">
             <div class="project-banner" aria-hidden="true">
