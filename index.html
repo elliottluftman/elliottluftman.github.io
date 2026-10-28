@@ -399,7 +399,7 @@
           </div>
 
           <!-- Likelihood -->
-          <div class="project-card project-card--featured project-card--full" data-category="web3" aria-label="Likelihood - Token Launchpad on Robinhood Chain">
+          <div class="project-card project-card--featured project-card--full" data-category="web3" aria-label="Likelihood - Prediction-Market-Backed Token Launchpad">
             <div class="project-body">
               <div class="project-tags">
                 <span class="tag tag-web3">Smart Contracts</span>
@@ -407,23 +407,23 @@
               </div>
               <div class="project-title-group">
                 <h3 class="project-title">Likelihood</h3>
-                <p class="project-subtitle">Token Launchpad on Robinhood Chain</p>
+                <p class="project-subtitle">Prediction-Market-Backed Token Launchpad</p>
               </div>
               <p class="project-desc">
-                Permissionless launchpad that turns a token idea into a functioning on-chain market. A creator deploys
-                a token that trades immediately against an automated bonding curve, buyers organically build its native
-                ETH reserve, and once it reaches a creator-configured target the liquidity graduates into a conventional
-                AMM pool. Launches can be tied to a Polymarket prediction market, so a coin carries the real-world
-                question it trades around.
+                Launchpad that turns a Polymarket prediction market into a tradable token on Robinhood Chain. Each
+                launch is tied to a real market and backed by actual outcome inventory held on Polygon, so a coin is
+                anchored to a real-world question rather than pure speculation. Tokens trade immediately against an
+                automated bonding curve and graduate into conventional AMM liquidity once they reach a
+                creator-configured reserve target.
               </p>
               <ul class="project-highlights">
+                <li>Tokens are backed by real Polymarket outcome positions, with Polygon-side inventory maintaining the backing behind each Robinhood Chain token</li>
+                <li>Cross-chain architecture spanning Polygon conditional-token positions and their Robinhood Chain representations, with attestation and reconciliation keeping the two sides consistent</li>
                 <li>Bonding-curve pricing against a native ETH reserve, so a launch needs no seeded liquidity - roughly a 1.2% trade fee and a 0.0015 ETH launch fee</li>
-                <li>Polymarket integration lets a creator attach a live prediction market to a launch, giving the coin context and framing - the link is metadata and display, and does not alter the token's financial mechanics</li>
                 <li>Creator-configurable graduation target with automatic AMM liquidity migration and a locked LP position</li>
-                <li>Low-custody architecture: read-only backend, multisig Safe administration, and the original deployer key destroyed after deployment</li>
                 <li>Event indexer and metadata pipeline that reconciles curve state, reserves, fees, and token imagery against chain state</li>
-                <li>Validated in production across two live token launches and nine real on-chain trades, with reserve and treasury accounting reconciled</li>
-                <li>Deliberately simplified from an earlier prediction-market-backed design once testing showed the economics of combining hard asset backing with speculative curve appreciation did not hold</li>
+                <li>Multisig Safe administration, with the original deployer key destroyed after deployment</li>
+                <li>Validated in production across live token launches and real on-chain trades, with reserve and treasury accounting reconciled against chain state</li>
               </ul>
               <div class="project-tech">
                 <span class="tech-pill">Solidity</span>
